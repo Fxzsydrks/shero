@@ -1,0 +1,41 @@
+/* Design tokens — matching the Stitch screen 09359903ea7d4839820f74e67af44162 exactly */
+
+:root {
+  /* ---------- Color — Stitch Tailwind config (verbatim) ---------- */
+  --background: #FFF0F5;
+  --primary: #FF007F;
+  --on-primary: #ffffff;
+  --primary-container: #FF69B4;
+  --on-primary-container: #ffffff;
+  --secondary: #9D005D;
+  --on-secondary: #ffffff;
+  --secondary-container: #FFE4E1;
+  --on-secondary-container: #9D005D;
+  --surface: #FFF5F8;
+  --on-surface: #2D001A;
+  --surface-container: #FFD1DC;
+  --surface-variant: #F9A8D4;
+  --outline: #FF007F;
+  --outline-variant: #F472B6;
+
+  /* ---------- Signature Stitch gradients + effects ---------- */
+  --pink-glam-gradient: linear-gradient(135deg, #FF007F 0%, #FF69B4 50%, #FF1493 100%);
+  --barbie-glow: 0 0 25px rgba(255, 0, 127, 0.3);
+  --shadow-xl: 0 20px 25px -5px rgba(255, 0, 127, 0.05), 0 8px 10px -6px rgba(255, 0, 127, 0.05);
+  --shadow-2xl: 0 25px 50px -12px rgba(255, 0, 127, 0.25);
+  --shadow-cta: 0 20px 40px -10px rgba(255, 0, 127, 0.3);
+  --shadow-nav: 0 10px 15px -3px rgba(255, 0, 127, 0.05);
+
+  /* ---------- Type family — Manrope only (Stitch spec) ---------- */
+  --font-sans: "Manrope", system-ui, -apple-system, sans-serif;
+
+  /* ---------- Radii — Stitch Tailwind config ---------- */
+  --radius-default: 0.5rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-2xl: 2rem;
+  --radius-3xl: 3rem;
+  --radius-hero: 60px;
+  --radius-card: 40px;
+  --radius-full: 9999px;
+}
