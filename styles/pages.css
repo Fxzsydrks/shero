@@ -1146,3 +1146,88 @@ main {
     font-size: 3rem;
   }
 }
+
+/* ---------------- Legal pages (Privacy, Terms, Imprint) ---------------- */
+
+.legal {
+  padding: 0 1.5rem 8rem;
+  background: var(--on-primary);
+}
+
+.legal__inner {
+  max-width: 768px;
+  margin-inline: auto;
+  color: var(--on-surface);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.legal__updated {
+  font-size: 0.875rem;
+  color: var(--secondary);
+  margin: 0 0 3rem;
+  font-weight: 500;
+}
+
+.legal__inner h2 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin: 3rem 0 1rem;
+  color: var(--on-surface);
+}
+
+.legal__inner h3 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin: 2rem 0 0.75rem;
+  color: var(--on-surface);
+}
+
+.legal__inner p,
+.legal__inner ul,
+.legal__inner ol,
+.legal__inner dl {
+  margin: 0 0 1rem;
+}
+
+.legal__inner ul,
+.legal__inner ol {
+  padding-left: 1.5rem;
+}
+
+.legal__inner li {
+  margin-bottom: 0.5rem;
+}
+
+.legal__inner dl {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.5rem 1.5rem;
+}
+
+.legal__inner dt {
+  font-weight: 700;
+}
+
+.legal__inner dd {
+  margin: 0;
+}
+
+.legal__inner a {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+.legal__inner a:hover {
+  color: var(--on-surface);
+}
+
+@media (min-width: 768px) {
+  .legal__inner {
+    font-size: 1.0625rem;
+  }
+  .legal__inner h2 {
+    font-size: 1.75rem;
+  }
+}

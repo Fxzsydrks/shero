@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!--
+  IMPRINT / IMPRESSUM
+  Mandatory under § 5 DDG (Germany) for any commercial site.
+  Replace every {{PLACEHOLDER}} below with real data before going public.
+  If the operator is not in Germany, adjust the legal references to the
+  applicable national law (§ 14 ECG in Austria, Art. 3a UWG in Switzerland, etc.).
+  Have this reviewed by a qualified lawyer.
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Imprint | Claudia Wolter Shero</title>
+    <meta
+      name="description"
+      content="Legal information for sherocrew.com in accordance with § 5 DDG."
+    />
+    <meta name="robots" content="noindex" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/tokens.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/components.css" />
+    <link rel="stylesheet" href="styles/pages.css" />
+  </head>
+  <body>
+    <header class="site-nav" data-nav></header>
+
+    <main>
+      <section class="page-intro">
+        <div class="page-intro__blob" aria-hidden="true"></div>
+        <div class="page-intro__inner">
+          <span class="eyebrow">Legal</span>
+          <h1>Imprint.</h1>
+          <p class="page-intro__lede">
+            Information provided in accordance with § 5 DDG.
+          </p>
+        </div>
+      </section>
+
+      <section class="legal">
+        <div class="legal__inner">
+          <p class="legal__updated">Last updated: {{DATE}}</p>
+
+          <h2>Operator</h2>
+          <dl>
+            <dt>Name</dt>
+            <dd>{{LEGAL_NAME}}</dd>
+            <dt>Address</dt>
+            <dd>
+              {{STREET_ADDRESS}}<br />
+              {{POSTAL_CODE}} {{CITY}}<br />
+              {{COUNTRY}}
+            </dd>
+          </dl>
+
+          <h2>Contact</h2>
+          <dl>
+            <dt>Email</dt>
+            <dd><a href="mailto:{{CONTACT_EMAIL}}">{{CONTACT_EMAIL}}</a></dd>
+            <dt>Phone</dt>
+            <dd>{{PHONE_OPTIONAL}}</dd>
+          </dl>
+
+          <h2>VAT Identification Number</h2>
+          <p>
+            VAT-ID according to § 27 a UStG: {{VAT_ID_OR_NOT_APPLICABLE}}
+          </p>
+
+          <h2>Responsible for editorial content</h2>
+          <p>
+            Responsible according to § 18 (2) MStV:
+            {{LEGAL_NAME}}, address as above.
+          </p>
+
+          <h2>Professional designation and regulator</h2>
+          <p>
+            {{PROFESSIONAL_TITLE_IF_REGULATED — e.g. coach,
+            mentor — typically not a regulated profession in Germany;
+            otherwise add chamber, awarding country and code of conduct here.}}
+          </p>
+
+          <h2>EU Online Dispute Resolution</h2>
+          <p>
+            The European Commission provides a platform for online dispute
+            resolution (OS):
+            <a href="https://ec.europa.eu/consumers/odr/" rel="noopener" target="_blank"
+              >https://ec.europa.eu/consumers/odr/</a
+            >. Our email address can be found above.
+          </p>
+
+          <h2>Consumer dispute resolution</h2>
+          <p>
+            We are neither willing nor obliged to participate in dispute
+            resolution proceedings before a consumer arbitration board.
+          </p>
+
+          <h2>Liability for content</h2>
+          <p>
+            As a service provider we are responsible for our own content on
+            these pages in accordance with general law (§ 7 (1) DDG).
+            According to §§ 8 to 10 DDG, however, we are not obliged to
+            monitor transmitted or stored third-party information or to
+            investigate circumstances that indicate illegal activity.
+            Obligations to remove or block the use of information under
+            general law remain unaffected.
+          </p>
+
+          <h2>Liability for links</h2>
+          <p>
+            Our site contains links to external third-party websites whose
+            content we have no influence over. We therefore cannot assume
+            any liability for this external content. The respective provider
+            or operator of the linked pages is always responsible for their
+            content.
+          </p>
+
+          <h2>Copyright</h2>
+          <p>
+            The content and works on these pages created by the operator are
+            subject to German copyright law. Duplication, processing,
+            distribution and any kind of exploitation outside the limits of
+            copyright law require the written consent of the respective
+            author or creator.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" data-footer></footer>
+
+    <script type="module" src="components/app.js"></script>
+  </body>
+</html>

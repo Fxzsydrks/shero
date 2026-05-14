@@ -1,5 +1,6 @@
 import { renderNav, wireNav } from "./nav.js";
 import { renderFooter } from "./footer.js";
+import { mountCookieBanner } from "./cookie-banner.js";
 
 // Single source of truth for every CTA on the site.
 // Replace with the live Calendly scheduling URL when ready.
@@ -30,4 +31,5 @@ document.addEventListener("DOMContentLoaded", () => {
   mountNav();
   mountFooter();
   wireCalendlyLinks();
+  mountCookieBanner();
 });
