@@ -1,12 +1,14 @@
 const NAV_LINKS = [
-  { href: "index.html", label: "Home", id: "home" },
-  { href: "about.html", label: "About", id: "about" },
-  { href: "coaching.html", label: "Coaching", id: "coaching" },
-  { href: "shero.html", label: "Shero", id: "shero" },
-  { href: "contact.html", label: "Contact", id: "contact" },
+  { href: "index.html#home", label: "Home", id: "home" },
+  { href: "index.html#about", label: "About", id: "about" },
+  { href: "index.html#coaching", label: "Coaching", id: "coaching" },
+  { href: "index.html#shero", label: "Shero", id: "shero" },
+  { href: "index.html#contact", label: "Contact", id: "contact" },
 ];
 
 function currentIdFromLocation() {
+  const hash = window.location.hash.replace("#", "");
+  if (hash) return hash;
   const file = (window.location.pathname.split("/").pop() || "index.html").toLowerCase();
   if (file === "" || file === "index.html") return "home";
   return file.replace(".html", "");
