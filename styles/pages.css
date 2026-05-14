@@ -701,15 +701,15 @@ main {
 
 .decision-card {
   padding: 2.5rem;
-  border-radius: 3rem;
-  background: var(--surface-container);
-  border: 2px solid rgba(255, 0, 127, 0.1);
+  border-radius: var(--radius-card);
+  background: var(--on-primary);
+  border-bottom: 8px solid var(--primary);
+  box-shadow: var(--shadow-xl);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
   min-height: 14rem;
-  transition: background 500ms ease, color 500ms ease;
+  transition: transform 500ms ease;
 }
 
 .decision-card p {
@@ -718,15 +718,10 @@ main {
   line-height: 1.35;
   color: var(--secondary);
   margin: 0;
-  transition: color 500ms ease;
 }
 
 .decision-card:hover {
-  background: var(--primary);
-}
-
-.decision-card:hover p {
-  color: var(--on-primary);
+  transform: translateY(-10px);
 }
 
 @media (min-width: 768px) {
