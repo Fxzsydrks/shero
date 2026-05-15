@@ -15,7 +15,7 @@ export function renderFooter() {
         <li><a class="site-footer__link" href="imprint.html">Imprint</a></li>
       </ul>
       <div class="site-footer__social">
-        <a href="mailto:hello@claudiawolter.com" aria-label="Email Claudia">
+        <a href="mailto:cw@sherocrew.com" aria-label="Email Claudia">
           <span class="material-symbols-outlined icon--fill">mail</span>
         </a>
         <a data-calendly aria-label="Book a session with Claudia">

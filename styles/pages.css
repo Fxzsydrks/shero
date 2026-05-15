@@ -1065,10 +1065,8 @@ main {
 }
 
 .contact-grid__inner {
-  max-width: 1152px;
+  max-width: 720px;
   margin-inline: auto;
-  display: grid;
-  gap: 3rem;
 }
 
 .contact-book-card {
@@ -1080,6 +1078,8 @@ main {
   flex-direction: column;
   gap: 2rem;
   box-shadow: 0 25px 50px -12px rgba(255, 0, 127, 0.4);
+  text-align: center;
+  align-items: center;
 }
 
 .contact-book-card h2 {
@@ -1096,49 +1096,7 @@ main {
   max-width: 36ch;
 }
 
-.contact-info {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.contact-info__block {
-  background: var(--surface);
-  padding: 2rem;
-  border-radius: 2rem;
-  border: 1px solid rgba(255, 0, 127, 0.1);
-}
-
-.contact-info__label {
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  font-weight: 900;
-  color: var(--secondary);
-  margin: 0 0 0.75rem;
-}
-
-.contact-info__value {
-  font-size: 1.25rem;
-  font-weight: 900;
-  letter-spacing: -0.02em;
-  color: var(--on-surface);
-  margin: 0;
-}
-
-.contact-info__value a {
-  color: inherit;
-}
-
-.contact-info__value a:hover {
-  color: var(--primary);
-}
-
 @media (min-width: 900px) {
-  .contact-grid__inner {
-    grid-template-columns: 1.2fr 1fr;
-    gap: 4rem;
-  }
   .contact-book-card {
     padding: 5rem 4rem;
   }
